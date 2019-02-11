@@ -4,14 +4,14 @@ A PushButton object is a polled switch filter and edge detector. Example below s
 
 Usage:
 
- from pushbutton import PushButton
- sw_whtgrn = PushButton(10)
+    from pushbutton import PushButton
+    sw_whtgrn = PushButton(10)
 
- while True:
-    if GPIO.input(12):  sw_whtgrn.clickout(10)
-    else:               sw_whtgrn.clickin_toggle(10)
+    while True:
+     if GPIO.input(12):  sw_whtgrn.clickout(10)
+     else:               sw_whtgrn.clickin_toggle(10)
 
-    if sw_whtgrn.toggle_position:   GPIO.output(26, GPIO.HIGH)
-    else:                           GPIO.output(26, GPIO.LOW)
+     if sw_whtgrn.toggle_position:   GPIO.output(26, GPIO.HIGH)
+     else:                           GPIO.output(26, GPIO.LOW)
 
-    time.sleep(0.005)
+     time.sleep(0.005)
