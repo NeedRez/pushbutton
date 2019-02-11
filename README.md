@@ -1,6 +1,6 @@
 # pushbutton.py
 
-A PushButton object is a polled switch. Example below shows how to toggle when clicked, and set a GPIO accordingly. Code is written with more deterministic timing and low CPU overhead.
+A PushButton object is a polled switch filter and edge detector. Example below shows how to toggle when clicked, and set a GPIO accordingly. Code is written with more deterministic timing and low CPU overhead.
 
 Usage:
  from pushbutton import PushButton
